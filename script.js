@@ -117,9 +117,6 @@ function updateStopwatchDisplay() {
   stopwatchDisplay.textContent = `${padTime(hours)} : ${padTime(minutes)} : ${padTime(seconds)}`;
 }
 
-function padTime(time) {
-  return time.toString().padStart(2, '0');
-}
 
 stopwatchStartBtn.addEventListener('click', () => {
   if (!stopwatchInterval) {
