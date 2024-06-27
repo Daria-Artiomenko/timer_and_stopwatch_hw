@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch and Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="timer">
+        <h2 class="title">Timer</h2>
+        <div class="circle">
+            <div class="set-timer">
+                <div class="set-timer-inputs">
+                    <input class="set-time hours" type="number" min="00" max="59"  value="00"><span class="set-time">:&#x20;</span>
+                    <input class="set-time minutes" type="number" min="00" max="59" value="00"><span class="set-time">:&#x20;</span>
+                    <input class="set-time seconds" type="number" min="00" max="59" value="00">
+                </div>
+
+                <div class="display-timer "></div>
+            </div>
+        </div>
+
+
+        <div class="timer-controls">
+            <!-- <button class="btn add-minute">+1m</button>
+            <button class="btn sub-minute">-1m</button> -->
+            <button class="btn start">Start</button>
+            <button class="btn pause">Pause</button>
+            <button class="btn reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="stopwatch">
+            <h2 class="title">Stopwatch</h2>
+            <div class="stopwatch-display">00 : 00 : 00</div>
+            <div class="stopwatch-controls">
+                <button class="btn start">Start</button>
+                <button class="btn pause">Pause</button>
+                <button class="btn reset">Reset</button>
+            </div>
+        </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
